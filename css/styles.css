@@ -45,6 +45,27 @@ body {
   color: white;
   height: 131px;
 }
+.nav-header .logo-contact {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.nav-header .logo-contact .contact {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  margin-right: 13px;
+}
+.nav-header .logo-contact .call-btn {
+  padding: 13px 22px;
+  color: #FFD200;
+  border: 1px solid #FFD200;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
 .nav-header .navigation-menu ul {
   display: flex;
   justify-content: space-between;
@@ -54,6 +75,11 @@ body {
 }
 .nav-header .navigation-menu ul li {
   padding: 0;
+  transition: color 0.7s;
+}
+.nav-header .navigation-menu ul li:hover {
+  color: #FFD200;
+  transition: color 0.7s;
 }
 
 .intro-block {
@@ -411,6 +437,65 @@ body {
 }
 .results-block .subheader {
   margin-top: 25px;
+  color: #555;
+}
+.results-block .results-content {
+  padding-top: 25px;
+}
+.results-block .results-content-main {
+  padding-bottom: 38px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.results-block .results-content-main .results-card {
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 28px 18px 20px 18px;
+  color: #555;
+  line-height: 23px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.results-block .results-content-main .results-card .title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.results-block .results-content-main .results-card p {
+  margin: 0;
+}
+.results-block .results-content-main .results-card ol {
+  margin: 0;
+  padding-left: 22px;
+}
+.results-block .quotation {
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 30px 20px;
+  display: flex;
+}
+.results-block .quotation .quotation-text {
+  color: #555;
+  max-width: 735px;
+}
+.results-block .quotation .quotation-person {
+  align-self: center;
+  margin-left: auto;
+}
+.results-block .quotation .quotation-person .name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+.results-block .quotation .quotation-person .desc {
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .faq-block {
