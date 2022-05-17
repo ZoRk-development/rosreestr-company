@@ -101,6 +101,9 @@ body {
     display: none;
   }
 }
+.nav-header .navigation-menu {
+  font-size: 1.6rem;
+}
 .nav-header .navigation-menu ul {
   display: flex;
   justify-content: space-between;
