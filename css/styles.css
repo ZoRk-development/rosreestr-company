@@ -706,7 +706,7 @@ body {
   padding: 45px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 425px;
   gap: 20px;
 }
 @media screen and (max-width: 720px) {
@@ -716,7 +716,7 @@ body {
   }
 }
 .features-block .features-contaner .features-card {
-  padding: 25px 35px;
+  padding: 15px 35px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   font-size: 1.8rem;
@@ -728,12 +728,13 @@ body {
   }
 }
 .features-block .features-contaner .features-card .features-card__icon {
-  border-radius: 50%;
-  border: 3px solid black;
   width: 75px;
   height: 75px;
   margin: 10px auto;
   margin-bottom: 25px;
+}
+.features-block .features-contaner .features-card .features-card__icon img {
+  width: 100%;
 }
 .features-block .features-contaner .features-card .features-card__header {
   font-weight: 700;
