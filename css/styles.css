@@ -13,11 +13,12 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   line-height: 28px;
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 @media screen and (max-width: 720px) {
   .container {
@@ -26,7 +27,12 @@ body {
 }
 @media screen and (min-width: 1190px) {
   .container {
-    max-width: 1089px;
+    max-width: 1190px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .container {
+    max-width: 1450px;
   }
 }
 
@@ -68,7 +74,12 @@ body {
 @media screen and (max-width: 720px) {
   .nav-header {
     height: 96px;
+    display: flex;
+    align-items: center;
   }
+}
+.nav-header .container {
+  flex: 1;
 }
 .nav-header .logo-contact {
   display: flex;
@@ -76,7 +87,7 @@ body {
   padding: 10px 0;
 }
 @media screen and (max-width: 720px) {
-  .nav-header .logo-contact {
+  .nav-header .logo-contact .logo {
     display: none;
   }
 }
@@ -88,6 +99,11 @@ body {
   text-align: right;
   margin-right: 13px;
 }
+@media screen and (max-width: 720px) {
+  .nav-header .logo-contact .contact {
+    display: none;
+  }
+}
 .nav-header .logo-contact .call-btn {
   padding: 13px 22px;
   color: #FFD200;
@@ -95,6 +111,36 @@ body {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 19px;
+}
+@media screen and (max-width: 720px) {
+  .nav-header .logo-contact .call-btn {
+    display: none;
+  }
+}
+.nav-header .logo-contact .menu-btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .nav-header .logo-contact .menu-btn-mobile {
+    display: none;
+  }
+}
+.nav-header .logo-contact .call-btn-mobile {
+  margin-left: auto;
+  border-radius: 50%;
+  border: 2px solid #FFD200;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .nav-header .logo-contact .call-btn-mobile {
+    display: none;
+  }
 }
 .nav-header .navigation-menu {
   font-size: 1.6rem;
@@ -129,6 +175,12 @@ body {
   .intro-block {
     background: linear-gradient(90deg, black 25%, white 110%);
     height: auto;
+  }
+}
+@media screen and (min-width: 720px) {
+  .intro-block .container {
+    padding-left: 85px;
+    position: relative;
   }
 }
 .intro-block .title {
@@ -230,7 +282,7 @@ body {
 }
 .intro-block .scroll-hint {
   position: absolute;
-  left: 25px;
+  left: -50px;
   transform: rotateZ(-90deg);
   color: white;
   font-weight: 300;
@@ -748,11 +800,10 @@ body {
   position: relative;
   padding-top: 350px;
   padding-bottom: 132px;
-  overflow: hidden;
 }
 @media screen and (max-width: 720px) {
   .mission-block {
-    padding-top: 25px;
+    padding-top: 45px;
     padding-bottom: 25px;
   }
 }
@@ -792,6 +843,12 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 720px) {
+  .mission-block .container .mission-quote:after {
+    left: -10px;
+    top: -65px;
+  }
+}
 .mission-block .container .mission-person {
   align-self: flex-end;
 }
@@ -804,6 +861,11 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 720px) {
+  .mission-block .container .mission-person .name {
+    font-size: 2rem;
+  }
+}
 .mission-block .container .mission-person .desc {
   margin-top: 15px;
   padding: 10px;
@@ -813,15 +875,25 @@ body {
   line-height: 24px;
   width: 281px;
 }
+@media screen and (max-width: 720px) {
+  .mission-block .container .mission-person .desc {
+    width: auto;
+    font-size: 2rem;
+  }
+}
 .mission-block .container .mission-person1 {
   position: relative;
-  left: 15px;
+  left: -65px;
+  top: 20px;
 }
 .mission-block .container .mission-person2 {
   position: relative;
-  left: 163px;
+  top: 30px;
+  left: -25px;
 }
 .mission-block .background {
+  width: 100%;
+  overflow: hidden;
   position: absolute;
   text-transform: uppercase;
   color: #F8F9FB;
@@ -1037,11 +1109,13 @@ body {
   box-shadow: 0px 4px 20px rgba(66, 66, 66, 0.3);
   border-radius: 10px;
   background-color: black;
+  border: 1px solid black;
   color: white;
   font-style: italic;
   font-size: 1.8rem;
   font-weight: 400;
   text-align: left;
+  outline: none;
 }
 .consult-form-block .form .agreement {
   font-weight: 400;
@@ -1049,6 +1123,11 @@ body {
   line-height: 14px;
   color: #2B2A28;
   margin-top: 7px;
+}
+@media screen and (max-width: 720px) {
+  .consult-form-block .form .agreement {
+    font-size: 2rem;
+  }
 }
 
 .contact-block {
@@ -1169,3 +1248,5 @@ body {
     margin-left: 0;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
