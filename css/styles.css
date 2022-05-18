@@ -1159,6 +1159,8 @@ body {
 }
 .footer .copyright {
   margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 @media screen and (max-width: 720px) {
   .footer .copyright {
