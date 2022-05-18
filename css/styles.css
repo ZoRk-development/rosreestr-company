@@ -810,7 +810,7 @@ body {
 .mission-block .container {
   display: flex;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1190px) {
   .mission-block .container {
     flex-flow: column;
   }
@@ -829,6 +829,11 @@ body {
     flex: 1;
   }
 }
+@media screen and (max-width: 1190px) {
+  .mission-block .container .mission-quote {
+    flex: 1;
+  }
+}
 .mission-block .container .mission-quote:after {
   content: "";
   position: absolute;
@@ -843,7 +848,7 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1190px) {
   .mission-block .container .mission-quote:after {
     left: -10px;
     top: -65px;
@@ -861,7 +866,7 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1190px) {
   .mission-block .container .mission-person .name {
     font-size: 2rem;
   }
@@ -875,7 +880,7 @@ body {
   line-height: 24px;
   width: 281px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1190px) {
   .mission-block .container .mission-person .desc {
     width: auto;
     font-size: 2rem;
@@ -883,17 +888,28 @@ body {
 }
 .mission-block .container .mission-person1 {
   position: relative;
-  left: -65px;
+  left: 0;
   top: 20px;
+}
+@media screen and (max-width: 1190px) {
+  .mission-block .container .mission-person1 {
+    left: -65px;
+  }
 }
 .mission-block .container .mission-person2 {
   position: relative;
-  top: 30px;
-  left: -25px;
+  top: 40px;
+  left: 25px;
+}
+@media screen and (max-width: 1190px) {
+  .mission-block .container .mission-person2 {
+    left: -25px;
+  }
 }
 .mission-block .background {
   width: 100%;
   overflow: hidden;
+  white-space: nowrap;
   position: absolute;
   text-transform: uppercase;
   color: #F8F9FB;
